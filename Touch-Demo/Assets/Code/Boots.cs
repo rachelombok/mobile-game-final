@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Boots : MonoBehaviour
 {
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.gameObject.CompareTag("enemy"))
-        {
-            Destroy(collision.collider.gameObject);
-        }
-    }
-    private void OnTriggerEnter(Collider other)
+    //private void OnCollisionEnter2D(Collision collision)
+    //{
+    //    if (collision.collider.gameObject.CompareTag("enemy"))
+    //    {
+    //        Destroy(collision.collider.gameObject);
+    //    }
+    //}
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("enemy"))
         {
